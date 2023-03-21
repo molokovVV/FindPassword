@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04406CB129C23ED300A94324 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04406CB029C23ED300A94324 /* String+Ext.swift */; };
 		04B4128A29BE634C0020E174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4128929BE634C0020E174 /* AppDelegate.swift */; };
 		04B4128C29BE634C0020E174 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4128B29BE634C0020E174 /* SceneDelegate.swift */; };
-		04B4128E29BE634C0020E174 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4128D29BE634C0020E174 /* ViewController.swift */; };
-		04B4129129BE634C0020E174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B4128F29BE634C0020E174 /* Main.storyboard */; };
+		04B4128E29BE634C0020E174 /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4128D29BE634C0020E174 /* FindPasswordViewController.swift */; };
 		04B4129329BE634E0020E174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B4129229BE634E0020E174 /* Assets.xcassets */; };
 		04B4129629BE634E0020E174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B4129429BE634E0020E174 /* LaunchScreen.storyboard */; };
+		04B4129F29BE6A080020E174 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04B4129E29BE6A080020E174 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04406CB029C23ED300A94324 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		04B4128629BE634C0020E174 /* FindPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B4128929BE634C0020E174 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B4128B29BE634C0020E174 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04B4128D29BE634C0020E174 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04B4129029BE634C0020E174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04B4128D29BE634C0020E174 /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
 		04B4129229BE634E0020E174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B4129529BE634E0020E174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B4129729BE634E0020E174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,12 +32,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B4129F29BE6A080020E174 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04406CA329C2395700A94324 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04B4129229BE634E0020E174 /* Assets.xcassets */,
+				04B4129429BE634E0020E174 /* LaunchScreen.storyboard */,
+				04B4129729BE634E0020E174 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04406CA529C2397100A94324 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				04406CAF29C23DAD00A94324 /* Extensions */,
+				04406CA729C239B700A94324 /* Scenes */,
+				04406CA629C2399500A94324 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		04406CA629C2399500A94324 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04B4128929BE634C0020E174 /* AppDelegate.swift */,
+				04B4128B29BE634C0020E174 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04406CA729C239B700A94324 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				04406CA829C239D600A94324 /* Controller */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		04406CA829C239D600A94324 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B4128D29BE634C0020E174 /* FindPasswordViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04406CAF29C23DAD00A94324 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04406CB029C23ED300A94324 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		04B4127D29BE634C0020E174 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +111,8 @@
 		04B4128829BE634C0020E174 /* FindPassword */ = {
 			isa = PBXGroup;
 			children = (
-				04B4128929BE634C0020E174 /* AppDelegate.swift */,
-				04B4128B29BE634C0020E174 /* SceneDelegate.swift */,
-				04B4128D29BE634C0020E174 /* ViewController.swift */,
-				04B4128F29BE634C0020E174 /* Main.storyboard */,
-				04B4129229BE634E0020E174 /* Assets.xcassets */,
-				04B4129429BE634E0020E174 /* LaunchScreen.storyboard */,
-				04B4129729BE634E0020E174 /* Info.plist */,
+				04406CA529C2397100A94324 /* Sources */,
+				04406CA329C2395700A94324 /* Resources */,
 			);
 			path = FindPassword;
 			sourceTree = "<group>";
@@ -83,6 +133,9 @@
 			dependencies = (
 			);
 			name = FindPassword;
+			packageProductDependencies = (
+				04B4129E29BE6A080020E174 /* SnapKit */,
+			);
 			productName = FindPassword;
 			productReference = 04B4128629BE634C0020E174 /* FindPassword.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,9 @@
 				Base,
 			);
 			mainGroup = 04B4127D29BE634C0020E174;
+			packageReferences = (
+				04B4129D29BE6A080020E174 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 04B4128729BE634C0020E174 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +183,6 @@
 			files = (
 				04B4129629BE634E0020E174 /* LaunchScreen.storyboard in Resources */,
 				04B4129329BE634E0020E174 /* Assets.xcassets in Resources */,
-				04B4129129BE634C0020E174 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +193,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B4128E29BE634C0020E174 /* ViewController.swift in Sources */,
+				04406CB129C23ED300A94324 /* String+Ext.swift in Sources */,
+				04B4128E29BE634C0020E174 /* FindPasswordViewController.swift in Sources */,
 				04B4128A29BE634C0020E174 /* AppDelegate.swift in Sources */,
 				04B4128C29BE634C0020E174 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +203,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04B4128F29BE634C0020E174 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04B4129029BE634C0020E174 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04B4129429BE634E0020E174 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +337,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TBKRN76F6S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FindPassword/Info.plist;
+				INFOPLIST_FILE = FindPassword/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +364,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TBKRN76F6S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FindPassword/Info.plist;
+				INFOPLIST_FILE = FindPassword/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04B4129D29BE6A080020E174 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04B4129E29BE6A080020E174 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04B4129D29BE6A080020E174 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04B4127E29BE634C0020E174 /* Project object */;
 }
